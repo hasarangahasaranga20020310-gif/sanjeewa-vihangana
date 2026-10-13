@@ -24,7 +24,7 @@ const timelineItems = [
     icon: Music,
   },
   {
-    time: "4.00 PM",
+    time: "4.30 PM",
     title: "The End",
     description:
       "As our celebration comes to a close, we say goodbye with grateful hearts, beautiful memories, and happiness made even greater by having you with us.",
