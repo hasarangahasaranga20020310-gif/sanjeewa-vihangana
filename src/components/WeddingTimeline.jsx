@@ -1,14 +1,7 @@
 import { motion } from "framer-motion";
-import { Camera, Heart, Music, Sparkles, Utensils } from "lucide-react";
+import { Camera, Heart, Music, Sparkles } from "lucide-react";
 
 const timelineItems = [
-  {
-    time: "10.00 AM",
-    title: "Guest Arrival",
-    description:
-      "The celebration begins with you. Arrive at Royal Rich Banquets, greet our loved ones, and settle in for a beautiful day filled with love and happiness.",
-    icon: Heart,
-  },
   {
     time: "10.30 AM",
     title: "The Registration",
@@ -25,21 +18,14 @@ const timelineItems = [
   },
   {
     time: "11.30 AM",
-    title: "Let the Celebrations Begin",
+    title: "The Celebration",
     description:
       "The formalities give way to celebration. Enjoy the music, share a few laughs, and make wonderful memories with everyone gathered to celebrate our love.",
     icon: Music,
   },
   {
-    time: "1.00 PM",
-    title: "Wedding Buffet",
-    description:
-      "Good food tastes even better when shared with the people we love. Join us for a delicious feast and enjoy this special time together.",
-    icon: Utensils,
-  },
-  {
     time: "4.00 PM",
-    title: "Until We Meet Again",
+    title: "The End",
     description:
       "As our celebration comes to a close, we say goodbye with grateful hearts, beautiful memories, and happiness made even greater by having you with us.",
     icon: Camera,
