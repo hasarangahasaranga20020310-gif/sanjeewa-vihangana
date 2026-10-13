@@ -350,7 +350,7 @@ function Hero() {
 
             <span className="h-1 w-1 rounded-full bg-[#D4AF37]" />
 
-            <span>10.00 AM</span>
+            <span>10.30 AM</span>
           </motion.div>
 
           {/* Venue */}
