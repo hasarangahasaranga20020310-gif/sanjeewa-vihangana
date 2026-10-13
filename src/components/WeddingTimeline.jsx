@@ -3,28 +3,28 @@ import { Camera, Heart, Music, Sparkles, Utensils } from "lucide-react";
 
 const timelineItems = [
   {
-    time: "9.45 AM",
+    time: "10.00 AM",
     title: "Guest Arrival",
     description:
       "The celebration begins with you. Arrive at Royal Rich Banquets, greet our loved ones, and settle in for a beautiful day filled with love and happiness.",
     icon: Heart,
   },
   {
-    time: "10.00 AM",
+    time: "10.30 AM",
     title: "The Registration",
     description:
       "A special moment as two hearts make their promises to one another. Join us as we take this beautiful step towards a lifetime of togetherness.",
     icon: Sparkles,
   },
   {
-    time: "10.30 AM",
+    time: "11.00 AM",
     title: "The Poruwa Ceremony",
     description:
       "Witness the beauty of tradition as we begin our journey together, surrounded by the blessings, love, and warm wishes of our family and friends.",
     icon: Heart,
   },
   {
-    time: "11.00 AM",
+    time: "11.30 AM",
     title: "Let the Celebrations Begin",
     description:
       "The formalities give way to celebration. Enjoy the music, share a few laughs, and make wonderful memories with everyone gathered to celebrate our love.",
