@@ -15,7 +15,7 @@ const details = [
   {
     icon: Clock3,
     label: "The Time",
-    value: "10.00 AM",
+    value: "10.30 AM",
     subValue: "Morning",
   },
   {
