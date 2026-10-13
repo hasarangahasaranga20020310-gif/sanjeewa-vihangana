@@ -414,7 +414,7 @@ function Venue() {
                     >
                       12 November 2026
                       <br />
-                      10.00 AM
+                      10.30 AM
                     </p>
                   </div>
                 </div>
