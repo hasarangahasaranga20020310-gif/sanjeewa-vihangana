@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-const weddingDate = new Date("2026-11-12T10:00:00+05:30").getTime();
+const weddingDate = new Date("2026-11-12T10:30:00+05:30").getTime();
 
 function calculateTimeLeft() {
   const difference = weddingDate - new Date().getTime();
@@ -379,7 +379,7 @@ function Countdown() {
                 text-[#5B184E]
               "
             >
-              10.00 AM · Royal Rich Banquets - Dompe
+              10.30 AM · Royal Rich Banquets - Dompe
             </p>
           </motion.div>
         </div>
