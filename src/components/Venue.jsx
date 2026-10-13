@@ -4,7 +4,10 @@ import { Clock3, ExternalLink, MapPin } from "lucide-react";
 import venueImage from "../assets/venue.jpg";
 
 const googleMapsUrl =
-  "https://maps.google.com/maps?q=6.9551725,80.0734219&z=16&output=embed";
+  "https://maps.app.goo.gl/jQm9wLx62GpLcfDbA";
+
+const googleMapsEmbedUrl =
+  "https://www.google.com/maps?q=Royal+Rich+Banquets+Dompe+Sri+Lanka&output=embed";
 
 function Venue() {
   return (
@@ -26,11 +29,7 @@ function Venue() {
         lg:pb-36
       "
     >
-      {/* =========================================
-          BACKGROUND DECORATION
-      ========================================== */}
-
-      {/* Top ambient blend glow from preceding section */}
+      {/* Background decoration */}
       <div
         className="
           pointer-events-none
@@ -76,44 +75,17 @@ function Venue() {
       />
 
       <div className="relative mx-auto max-w-6xl">
-        {/* =========================================
-            SECTION HEADER
-        ========================================== */}
-
+        {/* Section header */}
         <motion.div
-          initial={{
-            opacity: 0,
-            y: 30,
-          }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-          }}
-          viewport={{
-            once: true,
-            amount: 0.4,
-          }}
-          transition={{
-            duration: 0.8,
-          }}
-          className="
-            mx-auto
-            max-w-2xl
-            text-center
-          "
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.4 }}
+          transition={{ duration: 0.8 }}
+          className="mx-auto max-w-2xl text-center"
         >
-          <div
-            className="
-              flex
-              items-center
-              justify-center
-              gap-3
-            "
-          >
+          <div className="flex items-center justify-center gap-3">
             <span className="h-px w-10 bg-[#C59B27]/60" />
-
             <span className="text-sm text-[#D4AF37]">✦</span>
-
             <span className="h-px w-10 bg-[#C59B27]/60" />
           </div>
 
@@ -173,15 +145,12 @@ function Venue() {
               sm:text-base
             "
           >
-            Join us at a beautiful place where we will gather with our favourite
-            people to celebrate this special beginning.
+            Join us at a beautiful place where we will gather with our
+            favourite people to celebrate this special beginning.
           </p>
         </motion.div>
 
-        {/* =========================================
-            VENUE CONTENT
-        ========================================== */}
-
+        {/* Venue content */}
         <div
           className="
             mt-14
@@ -192,23 +161,11 @@ function Venue() {
             lg:gap-6
           "
         >
-          {/* =========================================
-              VENUE IMAGE
-          ========================================== */}
-
+          {/* Venue image */}
           <motion.div
-            initial={{
-              opacity: 0,
-              x: -50,
-            }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-            }}
-            viewport={{
-              once: true,
-              amount: 0.2,
-            }}
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
             transition={{
               duration: 0.9,
               ease: [0.22, 1, 0.36, 1],
@@ -236,23 +193,16 @@ function Venue() {
             >
               <motion.img
                 src={venueImage}
-                alt="Avenra Gardens wedding venue"
-                whileHover={{
-                  scale: 1.04,
-                }}
+                alt="Royal Rich Banquets wedding venue"
+                whileHover={{ scale: 1.04 }}
                 transition={{
                   duration: 1,
                   ease: "easeOut",
                 }}
-                className="
-                  h-full
-                  w-full
-                  object-cover
-                "
+                className="h-full w-full object-cover"
               />
 
               {/* Image overlay */}
-
               <div
                 className="
                   absolute
@@ -265,7 +215,6 @@ function Venue() {
               />
 
               {/* Floating venue label */}
-
               <div
                 className="
                   absolute
@@ -310,37 +259,19 @@ function Venue() {
             </div>
           </motion.div>
 
-          {/* =========================================
-              VENUE DETAILS
-          ========================================== */}
-
+          {/* Venue details */}
           <motion.div
-            initial={{
-              opacity: 0,
-              x: 50,
-            }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-            }}
-            viewport={{
-              once: true,
-              amount: 0.2,
-            }}
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
             transition={{
               duration: 0.9,
               delay: 0.1,
               ease: [0.22, 1, 0.36, 1],
             }}
-            className="
-              flex
-              flex-col
-              gap-5
-              lg:col-span-5
-            "
+            className="flex flex-col gap-5 lg:col-span-5"
           >
-            {/* Information Card */}
-
+            {/* Information card */}
             <div
               className="
                 rounded-[2.5rem]
@@ -389,7 +320,6 @@ function Venue() {
                 </h3>
 
                 {/* Location */}
-
                 <div
                   className="
                     mt-8
@@ -444,16 +374,8 @@ function Venue() {
                   </div>
                 </div>
 
-                {/* Time */}
-
-                <div
-                  className="
-                    mt-6
-                    flex
-                    items-start
-                    gap-4
-                  "
-                >
+                {/* Ceremony time */}
+                <div className="mt-6 flex items-start gap-4">
                   <div
                     className="
                       flex
@@ -497,18 +419,13 @@ function Venue() {
                   </div>
                 </div>
 
-                {/* Directions Button */}
-
+                {/* Directions button */}
                 <motion.a
                   href={googleMapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  whileHover={{
-                    y: -2,
-                  }}
-                  whileTap={{
-                    scale: 0.98,
-                  }}
+                  whileHover={{ y: -2 }}
+                  whileTap={{ scale: 0.98 }}
                   className="
                     mt-8
                     flex
@@ -536,10 +453,7 @@ function Venue() {
               </div>
             </div>
 
-            {/* =========================================
-                MAP
-            ========================================== */}
-
+            {/* Embedded Google Map */}
             <div
               className="
                 overflow-hidden
@@ -551,56 +465,30 @@ function Venue() {
                 shadow-[0_25px_80px_rgba(91,24,78,0.06)]
               "
             >
-              <div
-                className="
-                  overflow-hidden
-                  rounded-[2rem]
-                "
-              >
+              <div className="overflow-hidden rounded-[2rem]">
                 <iframe
-                  title="Avenra Gardens location"
-                  src="
-                    https://maps.google.com/maps?q=6.9551725,80.0734219&z=16&output=embed
-                  "
-                  className="
-                    h-[280px]
-                    w-full
-                    border-0
-                    sm:h-[320px]
-                  "
+                  title="Royal Rich Banquets location in Dompe"
+                  src={googleMapsEmbedUrl}
+                  className="h-[280px] w-full border-0 sm:h-[320px]"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
+                  allowFullScreen
                 />
               </div>
             </div>
           </motion.div>
         </div>
 
-        {/* =========================================
-            BOTTOM MESSAGE
-        ========================================== */}
-
+        {/* Bottom message */}
         <motion.div
-          initial={{
-            opacity: 0,
-            y: 20,
-          }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-          }}
-          viewport={{
-            once: true,
-          }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{
             duration: 0.8,
             delay: 0.3,
           }}
-          className="
-            mt-12
-            text-center
-            sm:mt-16
-          "
+          className="mt-12 text-center sm:mt-16"
         >
           <p
             className="
@@ -624,9 +512,7 @@ function Venue() {
             "
           >
             <span className="h-px w-8 bg-[#EADBBE]" />
-
             <span className="text-xs text-[#D4AF37]">✦</span>
-
             <span className="h-px w-8 bg-[#EADBBE]" />
           </div>
         </motion.div>
